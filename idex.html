@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raul | Über mich</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <button class="logo" data-go="start">RAUL</button>
+    <nav class="nav">
+      <button data-go="start" class="active">Über mich</button>
+      <button data-go="musik">Musik</button>
+      <button data-go="f1">Formel 1</button>
+      <button data-go="autos">Autos</button>
+      <button data-go="gaming">Gaming</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ÜBER MICH -->
+    <section class="page active" id="start">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="kicker" data-reveal>Hallo, ich bin Raul</p>
+          <h1 data-reveal>Über mich<br>und meine<br>Interessen</h1>
+          <p class="lead" data-reveal>
+            Ich lebe für Musik, Motorsport, schnelle Autos und gute Games.
+            Hier findest du alles, was mich antreibt.
+          </p>
+          <div class="chips" data-reveal>
+            <button data-go="musik">Musik</button>
+            <button data-go="f1">Motorsport F1</button>
+            <button data-go="autos">Autos</button>
+            <button data-go="gaming">Gaming</button>
+          </div>
+        </div>
+        <div class="hero-collage">
+          <img src="img/Travis_Scott.png" alt="Travis Scott" class="c1" data-reveal data-go="musik" data-item="0">
+          <img src="img/SF-25.png" alt="Ferrari SF 25" class="c2" data-reveal data-go="f1">
+          <img src="img/The_Weeknd.png" alt="The Weeknd" class="c3" data-reveal data-go="musik" data-item="1">
+          <img src="img/The_Neighbourhood.png" alt="The Neighbourhood" class="c4" data-reveal data-go="musik" data-item="2">
+        </div>
+      </div>
+    </section>
+
+    <!-- MUSIK -->
+    <section class="page" id="musik">
+      <div class="stage" data-stage="musik"></div>
+    </section>
+
+    <!-- F1 -->
+    <section class="page" id="f1">
+      <div class="video-wrap" data-reveal>
+        <video id="lewis-video" src="img/LEWIS.mp4" playsinline preload="auto"></video>
+      </div>
+      <div class="block driver" id="lewis">
+        <p class="kicker" data-reveal>Lieblingsfahrer</p>
+        <h2 data-reveal>Lewis Hamilton</h2>
+        <p class="lead" data-reveal>
+          Lewis ist mein Lieblingsfahrer, seit ich klein bin. Ich habe ihn schon als Kind
+          jedes Wochenende fahren sehen und mitgefiebert. Seine Ruhe, sein Speed im Regen
+          und wie er nie aufgibt haben mich immer begeistert. Jetzt fährt er in Rot für Ferrari
+          und ich bin mehr dabei als je zuvor.
+        </p>
+        <ul class="facts" data-reveal>
+          <li><span>Weltmeistertitel</span><span>7</span></li>
+          <li><span>Team</span><span>Scuderia Ferrari</span></li>
+          <li><span>Nummer</span><span>44</span></li>
+          <li><span>Fan seit</span><span>Ich klein war</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- AUTOS -->
+    <section class="page" id="autos">
+      <div class="block car">
+        <div class="car-hero">
+          <div class="car-text">
+            <img src="img/LOGOO.jpg" alt="Koenigsegg Logo" class="car-logo" data-reveal>
+            <p class="kicker" data-reveal>Mein Lieblingsauto</p>
+            <h2 data-reveal>Koenigsegg<br>Agera RS</h2>
+            <p class="lead" data-reveal>
+              Für mich das krasseste Hypercar, das je gebaut wurde. Aus Schweden, fast komplett
+              aus Carbon und 2017 das schnellste Serienauto der Welt. Kein Auto sieht von oben so
+              brutal aus wie dieses.
+            </p>
+          </div>
+          <div class="car-top" data-reveal>
+            <img src="img/AGERA.jpg" alt="Koenigsegg Agera RS von oben">
+          </div>
+        </div>
+
+        <div class="specs">
+          <div data-reveal><strong>1360</strong><span>PS</span></div>
+          <div data-reveal><strong>447</strong><span>km/h Rekord</span></div>
+          <div data-reveal><strong>2,8</strong><span>Sekunden auf 100</span></div>
+          <div data-reveal><strong>25</strong><span>Stück gebaut</span></div>
+        </div>
+
+        <div class="blueprint" data-reveal>
+          <img src="img/BLUPRINT.jpg" alt="Bauplan des Agera RS">
+          <p>Jede Linie hat einen Zweck. Der Agera RS von vorne, hinten, oben und der Seite.</p>
+        </div>
+
+        <div class="ghost">
+          <img src="img/GHOST.jpg" alt="Koenigsegg Geist" data-reveal>
+          <div>
+            <p class="kicker" data-reveal>Das Geist Logo</p>
+            <h3 data-reveal>Der Geist</h3>
+            <p class="lead" data-reveal>
+              Koenigsegg baut seine Autos in einem alten Hangar der schwedischen Luftwaffe.
+              Die Staffel, die dort stationiert war, hatte einen Geist als Wappen. Als Ehre
+              trägt jeder Koenigsegg diesen Geist bis heute auf dem Heck.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAMING -->
+    <section class="page" id="gaming">
+      <div class="block">
+        <p class="kicker" data-reveal>Controller in der Hand</p>
+        <h2 data-reveal>Gaming</h2>
+        <div class="cards">
+          <article data-reveal><span>01</span><h3>Racing</h3><p>F1 und Rennspiele, am liebsten mit voller Simulation und ohne Hilfen.</p></article>
+          <article data-reveal><span>02</span><h3>Open World</h3><p>Große Welten, die man stundenlang erkunden kann.</p></article>
+          <article data-reveal><span>03</span><h3>Mit Freunden</h3><p>Abends zusammen zocken ist für mich der beste Ausgleich.</p></article>
+          <article data-reveal><span>04</span><h3>Selbst bauen</h3><p>Eigene Spiele in Roblox entwickeln und Ideen umsetzen.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MONEY WIPE OVERLAY -->
+  <div id="wipe" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
